@@ -32,17 +32,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/breakpoints.scss";
+
 .section {
   width: 100vw;
   height: 100vh;
-  position: border-box;
+  box-sizing: border-box;
 
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background: fixed top/cover no-repeat;
+
+  @include breakpoint(mobileonly) {
+    background-attachment: unset;
+  }
 }
 </style>
