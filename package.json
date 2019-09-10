@@ -1,10 +1,10 @@
 {
   "name": "website",
-  "version": "0.1.0",
+  "description": "My latest (wip) website!",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "NODE_ENV=production vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
