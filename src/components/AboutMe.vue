@@ -38,7 +38,7 @@
         <h2>Fun Facts</h2>
         <p>I can ride a unicycle!</p>
 
-        <h2><a href="">See my Resume</a></h2>
+        <h2>See my Resume</h2>
       </div>
     </div>
   </Section>
