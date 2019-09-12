@@ -57,28 +57,32 @@ export default {
 <style lang="scss" scoped>
 .about-me {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .content {
-  display: flex;
   padding: 30px;
-  max-width: 900px;
+  display: grid;
+  grid: auto / 3fr 250px 700px 6fr;
+  grid-template-areas: ". side info .";
+}
+
+.info {
+  grid-area: info;
   font-size: 18px;
 }
 
 .portrait {
-  margin: 160px -20px 0 0;
-  position: relative;
-  right: 100px;
+  grid-area: side;
 
+  margin-top: 100px;
   width: 200px;
   height: 225px;
   border-radius: 5px;
+
   object-fit: cover;
   object-position: left;
-  /* margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px; */
-  /* float: left; */
 }
 </style>
