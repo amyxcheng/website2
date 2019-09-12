@@ -1,18 +1,12 @@
 <template>
   <div class="home">
     <Intro />
-    <Section backgroundColor="white">
-      About Me
-    </Section>
-    <Section class="projects" :backgroundURL="images.spiritIsland">
-      Projects
-    </Section>
+    <AboutMe />
+    <Projects />
     <Section backgroundColor="white">
       Discover
     </Section>
-    <Section class="contact-me" :backgroundURL="images.meadow">
-      Contact Me
-    </Section>
+    <ContactMe />
   </div>
 </template>
 
@@ -20,6 +14,9 @@
 // @ is an alias to /src
 import Section from "@/components/Section.vue";
 import Intro from "@/components/Intro.vue";
+import AboutMe from "@/components/AboutMe.vue";
+import Projects from "@/components/Projects.vue";
+import ContactMe from "@/components/ContactMe.vue";
 
 // Import images from 'assets' folder.
 import emeraldLake from "@/assets/emeraldLake2.jpg";
@@ -45,7 +42,10 @@ export default {
   }),
   components: {
     Section,
-    Intro
+    Intro,
+    AboutMe,
+    Projects,
+    ContactMe
   }
 };
 </script>

@@ -36,11 +36,11 @@ export default {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
 
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
